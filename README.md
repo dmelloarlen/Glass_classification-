@@ -2,7 +2,7 @@
 
 ## Data Cleaning
 
-**Handled by:** Jenil Mistry
+**Handled by:** Jenil Mistry,Maadhav Agarwal,Arlen Demllo,Aarya Patel
 
 ### Process Overview:
 
