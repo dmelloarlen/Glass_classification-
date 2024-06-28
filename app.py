@@ -1,5 +1,6 @@
 import streamlit as st
 import anaylsis as an
+import webbrowser
 
 obj=an.Ana
 def navbar():
@@ -61,7 +62,7 @@ def navbar():
             <li class="item"><a href="/?page=home" target="_self">Home</a></li>
             <li class="item"><a href="/?page=visualisation" target="_self">Visualisation</a></li>
             <li class="item"><a href="/?page=data" target="_self">Data</a></li>
-            <li class="item"><a href="/?page=about" target="_self">About</a></li>
+            <li class="item"><a href="/?page=about" target="_self ">About<a href="https://github.com/dmelloarlen/Glass_classification-/blob/main/README.md"></a></li>
         </ul>  
     </div>
     """, unsafe_allow_html=True)
@@ -70,11 +71,11 @@ def navbar():
     page = qp.get("page", "home")
 
     if page == "home":
-        st.title("Home")
+        obj.home()
     elif page == "visualisation":
         obj.plot()
     elif page == "about":
-        st.title("About")
+        webbrowser.open_new_tab("https://github.com/dmelloarlen/Glass_classification-/blob/main/README.md")
     elif page == "data":
        obj.info()
     else:
